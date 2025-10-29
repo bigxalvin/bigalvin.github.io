@@ -5,49 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sky High Constructions</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f2f2f2;
-    }
-    header {
-      background: #1a1a1a;
+      background: url('https://images.unsplash.com/photo-1581091215367-59ab6b6b69ab?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
       color: white;
-      text-align: center;
-      padding: 1.5rem;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 2rem;
+    }
+
     h1 {
-      margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
       letter-spacing: 1px;
     }
-    section {
-      padding: 2rem;
-      text-align: center;
+
+    p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
     }
+
+    section {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 12px;
+      margin: 2rem;
+    }
+
     a.button {
       display: inline-block;
       background: #fbb034;
       color: #222;
       text-decoration: none;
-      padding: 10px 20px;
-      font-size: 1rem;
+      padding: 12px 24px;
+      font-size: 1.1rem;
       border-radius: 6px;
       cursor: pointer;
       transition: 0.3s;
+      margin-top: 1rem;
     }
+
     a.button:hover {
       background: #222;
       color: #fbb034;
     }
+
     footer {
-      background: #1a1a1a;
-      color: white;
+      background: rgba(0, 0, 0, 0.6);
       text-align: center;
       padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
     }
   </style>
 </head>
